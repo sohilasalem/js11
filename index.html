@@ -1,0 +1,28 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>log in</title>
+    <link rel="shortcut icon" href="imgs/user.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body class="d-flex flex-column justify-content-center align-items-center py-5">
+   <div class="container bg-dark d-flex justify-content-center align-items-center flex-column py-5">
+    <h2 class="text-secondary">Smart Login System</h2>
+    <input oninput="validateUserEmail()" id="UsertEmail" class="w-50 my-2 form-control" type="email" placeholder="  Enter Your Email">
+    <input oninput="validateUserpass()" id="Userpass" class="w-50 my-2 form-control" type="text" placeholder="  Enter Your password">
+    <div id="inputError" class="d-none alert text-danger">All inputs is required</div>
+    <div id="inputInvalid" class="d-none alert text-danger">incorrect email or password</div>
+
+   <!-- <a class="text-white list-unstyled " href="login.html"><button onclick="addAcc()" type="button" id="submit" class="btn btn-outline-secondary mt-4 ">Log in</button></a>  -->
+   <button type="button" id="submit" class="btn btn-outline-secondary w-50 my-4 ">Log in</button>
+    <p class="text-white pt-3">Don’t have an account? <a class='text-white' href='signup.html'>Sign Up</a></p>
+
+   </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
